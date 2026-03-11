@@ -18,9 +18,12 @@ export type Database = {
         Row: {
           appointment_time: string
           created_at: string
+          emergency_approved: boolean
+          emergency_reason: string | null
           id: string
           institution_id: string | null
           institution_name: string | null
+          is_emergency: boolean
           notified_15min: boolean
           notified_1hr: boolean
           notified_30min: boolean
@@ -37,9 +40,12 @@ export type Database = {
         Insert: {
           appointment_time: string
           created_at?: string
+          emergency_approved?: boolean
+          emergency_reason?: string | null
           id?: string
           institution_id?: string | null
           institution_name?: string | null
+          is_emergency?: boolean
           notified_15min?: boolean
           notified_1hr?: boolean
           notified_30min?: boolean
@@ -56,9 +62,12 @@ export type Database = {
         Update: {
           appointment_time?: string
           created_at?: string
+          emergency_approved?: boolean
+          emergency_reason?: string | null
           id?: string
           institution_id?: string | null
           institution_name?: string | null
+          is_emergency?: boolean
           notified_15min?: boolean
           notified_1hr?: boolean
           notified_30min?: boolean
